@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>台灣氣溫與降雨分佈</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- Highcharts 資源 -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<!-- 折線圖 -->
+<figure class="highcharts-figure">
+    <div id="container"></div>
+    <p class="highcharts-description">
+        台灣三個城市（台北、台中、高雄）的月均溫變化趨勢圖。數據來源：台灣氣象局。
+    </p>
+</figure>
+
+<!-- 圓餅圖 -->
+<figure class="highcharts-figure">
+    <div id="piechart-container"></div>
+    <p class="highcharts-description">
+        台灣三個城市的年均降雨量比例分佈。
+    </p>
+</figure>
+
+<!-- 連接 script.js -->
+<script src="./script.js"></script>
+</body>
+</html>
